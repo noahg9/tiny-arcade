@@ -1,13 +1,30 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
+    <title>Tiny Arcade</title>
+    <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+    <div id="app">
+        <aside id="sidebar" class="closed">
+            <div class="sidebar-header">
+                <h2>Tiny Arcade</h2>
+                <button id="toggleSidebar">&#9776;</button>
+            </div>
+            <nav id="sidebar-nav">
+                <!-- Game buttons inserted dynamically -->
+            </nav>
+        </aside>
+
+        <main id="main-content">
+            <div id="gameContainer">
+                <p>Select a game from the sidebar to start!</p>
+            </div>
+        </main>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
-  </body>
+</body>
 </html>
