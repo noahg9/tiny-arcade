@@ -1,21 +1,13 @@
 ﻿import './style.css'
-
-// Import the games
-import { startSnakeGame } from './games/snake'
-import { startMemoryGame } from './games/memory-game'
-import { startFlappyBird } from './games/flappy-bird'
-import { startPong } from './games/pong'
-import { startAvoider } from './games/avoider'
+import { YahtzeeGame } from './games/yahtzee'
+import { ReversiGame } from './games/reversi'
 
 const container = document.getElementById('gameContainer')!
 
-// List of games with optional icons (you can replace with actual SVGs or emojis)
+// List of games
 const games = [
-    { name: 'Snake', start: startSnakeGame, icon: '🐍' },
-    { name: 'Memory Game', start: startMemoryGame, icon: '🧠' },
-    { name: 'Flappy Bird', start: startFlappyBird, icon: '🐦' },
-    { name: 'Pong', start: startPong, icon: '🏓' },
-    { name: 'Avoider', start: startAvoider, icon: '🚀' },
+    YahtzeeGame,
+    ReversiGame,
 ]
 
 const sidebarNav = document.getElementById('sidebar-nav')!
